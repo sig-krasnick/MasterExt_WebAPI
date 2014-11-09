@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasterExt_DAL</RootNamespace>
+    <AssemblyName>MasterExt_DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="actor.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="address.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="category.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="city.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="country.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customer_list.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="film.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="film_actor.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="film_category.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="film_list.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="film_text.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="inventory.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="language.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterExt.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterExt.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterExt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterExt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterExt.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs" />
+    <Compile Include="payment.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rental.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sales_by_film_category.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sales_by_store.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="staff.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="staff_list.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="store.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>MasterExt.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="MasterExt.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MasterExt.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MasterExt.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterExt.edmx</DependentUpon>
+      <LastGenOutput>MasterExt.Context.cs</LastGenOutput>
+    </None>
+    <None Include="MasterExt.edmx.diagram">
+      <DependentUpon>MasterExt.edmx</DependentUpon>
+    </None>
+    <None Include="MasterExt.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterExt.edmx</DependentUpon>
+      <LastGenOutput>MasterExt.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

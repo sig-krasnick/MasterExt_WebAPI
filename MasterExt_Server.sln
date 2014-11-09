@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterExt_WebAPI", "MasterExt_WebAPI\MasterExt_WebAPI.csproj", "{4CFBDD36-561D-4E4B-9983-82E634497D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterExt_DAL", "MasterExt_DAL\MasterExt_DAL.csproj", "{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterExt_Services", "MasterExt_Services\MasterExt_Services.csproj", "{08CAA0CC-B04A-4FF6-BA99-095E51B7CFCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CFBDD36-561D-4E4B-9983-82E634497D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFBDD36-561D-4E4B-9983-82E634497D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFBDD36-561D-4E4B-9983-82E634497D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFBDD36-561D-4E4B-9983-82E634497D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC4AFB2-DA83-4078-8F28-626E4BEAC078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08CAA0CC-B04A-4FF6-BA99-095E51B7CFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08CAA0CC-B04A-4FF6-BA99-095E51B7CFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08CAA0CC-B04A-4FF6-BA99-095E51B7CFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08CAA0CC-B04A-4FF6-BA99-095E51B7CFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

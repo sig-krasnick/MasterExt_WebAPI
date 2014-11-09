@@ -1,0 +1,9 @@
+*.dll
+bin/
+debug*/
+obj/
+*.log
+*.cache
+*.bak
+Release*/
+Package*/
